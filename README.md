@@ -9,7 +9,7 @@
 - 以'./'为前缀的模块是相对于调用require()文件的
 
 当没有以'/'、'./'、或'../'开头来表示文件时，这个模块必须是一个核心模块或加载自node_modules目录
-如果给定的路径不存在，则require()会抛出一个code属性为‘MODULE_NOT_FOUND'的Error
+如果给定的路径不存在，则require()会抛出一个code属性为'MODULE_NOT_FOUND'的Error
 
 // 文件位置
 console.log(__filename)
