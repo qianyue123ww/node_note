@@ -1,0 +1,23 @@
+{
+  "name": "node_note",
+  "version": "1.0.0",
+  "description": "**node.js学习笔记**",
+  "main": "node_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qianyue123ww/node_note.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qianyue123ww/node_note/issues"
+  },
+  "homepage": "https://github.com/qianyue123ww/node_note#readme",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "protocol-buffers": "^4.2.0"
+  }
+}
