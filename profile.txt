@@ -1,0 +1,945 @@
+Statistical profiling result from isolate-0x102a65000-332-v8.log, (5729 ticks, 24 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     31    0.5%          /usr/lib/system/libsystem_pthread.dylib
+     28    0.5%          /usr/lib/system/libsystem_platform.dylib
+     18    0.3%          /usr/lib/system/libsystem_malloc.dylib
+      9    0.2%          /usr/lib/system/libsystem_kernel.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     43    0.8%    0.8%  LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     31    0.5%    0.5%  LazyCompile: *Readable.resume _stream_readable.js:924:37
+     31    0.5%    0.5%  LazyCompile: *Readable.read _stream_readable.js:368:35
+     30    0.5%    0.5%  LazyCompile: *onwrite _stream_writable.js:431:17
+     28    0.5%    0.5%  LazyCompile: *<anonymous> internal/fs/streams.js:177:55
+     22    0.4%    0.4%  LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+     18    0.3%    0.3%  LazyCompile: *parserOnIncoming _http_server.js:717:26
+     18    0.3%    0.3%  LazyCompile: *ReadStream._read internal/fs/streams.js:144:38
+     15    0.3%    0.3%  LazyCompile: *onceWrapper events.js:411:21
+     15    0.3%    0.3%  LazyCompile: *afterWriteTick _stream_writable.js:475:24
+     15    0.3%    0.3%  LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     13    0.2%    0.2%  LazyCompile: *resOnFinish _http_server.js:672:21
+     13    0.2%    0.2%  LazyCompile: *Readable.on _stream_readable.js:837:33
+     13    0.2%    0.2%  LazyCompile: *Readable _stream_readable.js:166:18
+     12    0.2%    0.2%  LazyCompile: *readableAddChunk _stream_readable.js:217:26
+     12    0.2%    0.2%  LazyCompile: *insertGuarded internal/timers.js:315:23
+     11    0.2%    0.2%  LazyCompile: *resume_ _stream_readable.js:945:17
+     10    0.2%    0.2%  LazyCompile: *processPromiseRejections internal/process/promises.js:171:34
+     10    0.2%    0.2%  LazyCompile: *insert internal/timers.js:340:16
+     10    0.2%    0.2%  LazyCompile: *emit events.js:260:44
+     10    0.2%    0.2%  LazyCompile: *_addListener events.js:338:22
+      9    0.2%    0.2%  LazyCompile: *removeListener events.js:446:28
+      9    0.2%    0.2%  LazyCompile: *afterShutdown net.js:424:23
+      8    0.1%    0.1%  LazyCompile: *parserOnMessageComplete _http_common.js:138:33
+      8    0.1%    0.1%  LazyCompile: *onend _stream_readable.js:658:17
+      8    0.1%    0.1%  LazyCompile: *ondata _stream_readable.js:693:18
+      8    0.1%    0.1%  LazyCompile: *get _stream_duplex.js:76:8
+      8    0.1%    0.1%  LazyCompile: *ReadableState _stream_readable.js:86:23
+      8    0.1%    0.1%  LazyCompile: *Readable.pipe _stream_readable.js:619:35
+      7    0.1%    0.1%  RegExp: (?:^|\W)chunked(?:$|\W)
+      7    0.1%    0.1%  LazyCompile: *socketOnClose _http_server.js:518:23
+      7    0.1%    0.1%  LazyCompile: *arrayClone events.js:601:20
+      7    0.1%    0.1%  LazyCompile: *<anonymous> internal/util/debuglog.js:61:18
+      6    0.1%    0.1%  LazyCompile: *matchKnownFields _http_incoming.js:149:26
+      6    0.1%    0.1%  LazyCompile: *getStderr internal/bootstrap/switches/is_main_thread.js:127:19
+      6    0.1%    0.1%  LazyCompile: *connectionListenerInternal _http_server.js:401:36
+      6    0.1%    0.1%  LazyCompile: *clearBuffer _stream_writable.js:497:21
+      6    0.1%    0.1%  LazyCompile: *checkListener events.js:106:23
+      6    0.1%    0.1%  LazyCompile: *_writeRaw _http_outgoing.js:315:19
+      6    0.1%    0.1%  LazyCompile: *<anonymous> internal/streams/destroy.js:38:30
+      6    0.1%    0.1%  LazyCompile: *<anonymous> _stream_writable.js:609:17
+      5    0.1%    0.1%  LazyCompile: *updateOutgoingData _http_server.js:484:28
+      5    0.1%    0.1%  LazyCompile: *open fs.js:423:14
+      5    0.1%    0.1%  LazyCompile: *onParserExecute _http_server.js:567:25
+      5    0.1%    0.1%  LazyCompile: *onFinish _http_outgoing.js:729:18
+      5    0.1%    0.1%  LazyCompile: *inspect internal/util/inspect.js:221:17
+      5    0.1%    0.1%  LazyCompile: *emitReadable_ _stream_readable.js:539:23
+      5    0.1%    0.1%  LazyCompile: *destroy internal/streams/destroy.js:5:17
+      5    0.1%    0.1%  LazyCompile: *Writable.write _stream_writable.js:291:36
+      5    0.1%    0.1%  LazyCompile: *Socket._writev net.js:790:36
+      4    0.1%    0.1%  LazyCompile: *writeGeneric internal/stream_base_commons.js:141:22
+      4    0.1%    0.1%  LazyCompile: *unenroll timers.js:66:18
+      4    0.1%    0.1%  LazyCompile: *stringToFlags internal/fs/utils.js:432:23
+      4    0.1%    0.1%  LazyCompile: *push internal/fixed_queue.js:99:7
+      4    0.1%    0.1%  LazyCompile: *maybeReadMore_ _stream_readable.js:574:24
+      4    0.1%    0.1%  LazyCompile: *log internal/console/constructor.js:293:6
+      4    0.1%    0.1%  LazyCompile: *getDefaultTriggerAsyncId internal/async_hooks.js:273:34
+      4    0.1%    0.1%  LazyCompile: *connectionListener _http_server.js:395:28
+      4    0.1%    0.1%  LazyCompile: *connectionCorkNT _http_outgoing.js:697:26
+      4    0.1%    0.1%  LazyCompile: *callFinal _stream_writable.js:608:19
+      4    0.1%    0.1%  LazyCompile: *allocNewPool internal/fs/streams.js:39:22
+      4    0.1%    0.1%  LazyCompile: *_flush _http_outgoing.js:826:51
+      3    0.1%    0.1%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      3    0.1%    0.1%  LazyCompile: *writeOrBuffer _stream_writable.js:355:23
+      3    0.1%    0.1%  LazyCompile: *socketListenerWrap _http_server.js:835:37
+      3    0.1%    0.1%  LazyCompile: *setStreamTimeout internal/stream_base_commons.js:234:26
+      3    0.1%    0.1%  LazyCompile: *push internal/fixed_queue.js:75:7
+      3    0.1%    0.1%  LazyCompile: *onunpipe _stream_readable.js:648:20
+      3    0.1%    0.1%  LazyCompile: *onconnection net.js:1529:22
+      3    0.1%    0.1%  LazyCompile: *nextTick internal/process/task_queues.js:105:18
+      3    0.1%    0.1%  LazyCompile: *get internal/console/constructor.js:160:10
+      3    0.1%    0.1%  LazyCompile: *endReadableNT _stream_readable.js:1180:23
+      3    0.1%    0.1%  LazyCompile: *_onceWrap events.js:421:19
+      3    0.1%    0.1%  LazyCompile: *WritableState _stream_writable.js:68:23
+      3    0.1%    0.1%  LazyCompile: *<anonymous> net.js:670:24
+      3    0.1%    0.1%  LazyCompile: *<anonymous> internal/fs/streams.js:127:45
+      2    0.0%    0.0%  LazyCompile: *writevGeneric internal/stream_base_commons.js:116:23
+      2    0.0%    0.0%  LazyCompile: *write _http_outgoing.js:628:49
+      2    0.0%    0.0%  LazyCompile: *unpipe _stream_readable.js:748:18
+      2    0.0%    0.0%  LazyCompile: *listenerCount events.js:581:23
+      2    0.0%    0.0%  LazyCompile: *hidden internal/errors.js:281:25
+      2    0.0%    0.0%  LazyCompile: *getStdout internal/bootstrap/switches/is_main_thread.js:115:19
+      2    0.0%    0.0%  LazyCompile: *end _http_outgoing.js:734:45
+      2    0.0%    0.0%  LazyCompile: *emitCloseNT internal/streams/destroy.js:64:21
+      2    0.0%    0.0%  LazyCompile: *closeFsStream internal/fs/streams.js:235:23
+      2    0.0%    0.0%  LazyCompile: *close fs.js:408:15
+      2    0.0%    0.0%  LazyCompile: *cleanup _stream_readable.js:666:19
+      2    0.0%    0.0%  LazyCompile: *addChunk _stream_readable.js:283:18
+      2    0.0%    0.0%  LazyCompile: *addCatch events.js:151:18
+      2    0.0%    0.0%  LazyCompile: *_storeHeader _http_outgoing.js:345:22
+      2    0.0%    0.0%  LazyCompile: *Writable.uncork _stream_writable.js:328:37
+      2    0.0%    0.0%  LazyCompile: *Socket.end net.js:587:32
+      2    0.0%    0.0%  LazyCompile: *Socket._writeGeneric net.js:758:42
+      2    0.0%    0.0%  LazyCompile: *Socket net.js:262:16
+      2    0.0%    0.0%  LazyCompile: *Readable.removeListener _stream_readable.js:867:45
+      2    0.0%    0.0%  LazyCompile: *<anonymous> internal/fs/streams.js:236:23
+      2    0.0%    0.0%  LazyCompile: *<anonymous> internal/fs/streams.js:146:38
+      1    0.0%    0.0%  LazyCompile: *writeHead _http_server.js:243:19
+      1    0.0%    0.0%  LazyCompile: *resetHeadersTimeoutOnReqEnd _http_server.js:851:37
+      1    0.0%    0.0%  LazyCompile: *once events.js:429:44
+      1    0.0%    0.0%  LazyCompile: *get net.js:1682:6
+      1    0.0%    0.0%  LazyCompile: *formatWithOptions internal/util/inspect.js:1774:27
+      1    0.0%    0.0%  LazyCompile: *emitCloseNT _http_server.js:710:21
+      1    0.0%    0.0%  LazyCompile: *copyObject internal/fs/utils.js:140:20
+      1    0.0%    0.0%  LazyCompile: *clearIncoming _http_server.js:656:23
+      1    0.0%    0.0%  LazyCompile: *append internal/linkedlist.js:29:16
+      1    0.0%    0.0%  LazyCompile: *_unrefTimer net.js:389:52
+      1    0.0%    0.0%  LazyCompile: *Socket.resume net.js:608:35
+      1    0.0%    0.0%  LazyCompile: *Readable.removeAllListeners _stream_readable.js:884:49
+      1    0.0%    0.0%  LazyCompile: *OutgoingMessage.uncork _http_outgoing.js:242:44
+      1    0.0%    0.0%  LazyCompile: *OutgoingMessage _http_outgoing.js:81:25
+      1    0.0%    0.0%  LazyCompile: *EventEmitter.init events.js:127:29
+      1    0.0%    0.0%  LazyCompile: *<anonymous> internal/fs/utils.js:508:3
+      1    0.0%    0.0%  LazyCompile: *<anonymous> internal/console/constructor.js:203:10
+
+ [C++]:
+   ticks  total  nonlib   name
+   1824   31.8%   32.3%  T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+    387    6.8%    6.9%  T ___bsdthread_create
+    315    5.5%    5.6%  T _read$NOCANCEL
+    267    4.7%    4.7%  T _fcntl
+    195    3.4%    3.5%  T _guarded_open_np
+    169    2.9%    3.0%  T _semaphore_wait
+    164    2.9%    2.9%  T _task_restartable_ranges_synchronize
+    119    2.1%    2.1%  T __kernelrpc_thread_policy_set
+    108    1.9%    1.9%  T __kernelrpc_mach_vm_purgable_control_trap
+    103    1.8%    1.8%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+     99    1.7%    1.8%  T _proc_set_cpumon_params
+     91    1.6%    1.6%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     44    0.8%    0.8%  T __kernelrpc_mach_port_get_refs
+     33    0.6%    0.6%  T _getattrlistbulk
+     30    0.5%    0.5%  T ___ulock_wait
+     29    0.5%    0.5%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     28    0.5%    0.5%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+     26    0.5%    0.5%  T node::InternalCallbackScope::Close()
+     25    0.4%    0.4%  T __ZN2v88Function4CallENS_5LocalINS_7ContextEEENS1_INS_5ValueEEEiPS5_
+     24    0.4%    0.4%  T __ZN2v86Object3SetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEES5_
+     23    0.4%    0.4%  T __ZN2v86Object3GetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEE
+     20    0.3%    0.4%  t _szone_realloc
+     19    0.3%    0.3%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+     18    0.3%    0.3%  T __ZNK2v85Value10IsFunctionEv
+     17    0.3%    0.3%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+     17    0.3%    0.3%  T __ZN2v811HandleScopeC1EPNS_7IsolateE
+     16    0.3%    0.3%  t std::__1::__hash_table<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<int, void*>*>)
+     16    0.3%    0.3%  T __ZN2v86Object3HasENS_5LocalINS_7ContextEEENS1_INS_5ValueEEE
+     15    0.3%    0.3%  t _tiny_malloc_should_clear
+     15    0.3%    0.3%  t _small_malloc_should_clear
+     11    0.2%    0.2%  t _free_tiny
+     11    0.2%    0.2%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.2%    0.2%  T _kdebug_typefilter
+     10    0.2%    0.2%  t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    0.2%    0.2%  t node::LibuvStreamWrap::Initialize(v8::Local<v8::Object>, v8::Local<v8::Value>, v8::Local<v8::Context>, void*)::$_0::__invoke(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    0.2%    0.2%  t node::EnvQuery(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Integer> const&)
+     10    0.2%    0.2%  t node::(anonymous namespace)::GetLibuvNow(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    0.2%    0.2%  t _tiny_free_no_lock
+     10    0.2%    0.2%  t _rack_region_insert
+     10    0.2%    0.2%  T node::fs::FSReqCallback::Resolve(v8::Local<v8::Value>)
+     10    0.2%    0.2%  T _vm_copy
+     10    0.2%    0.2%  T __ZN2v86Object3GetENS_5LocalINS_7ContextEEEj
+      9    0.2%    0.2%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.2%    0.2%  T void node::StreamBase::JSMethod<&(node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.2%    0.2%  T void node::StreamBase::JSMethod<&(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.2%    0.2%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+      9    0.2%    0.2%  T _task_policy_set
+      9    0.2%    0.2%  T _pthread_qos_max_parallelism
+      9    0.2%    0.2%  T __ZN2v811ArrayBuffer11GetContentsEv
+      8    0.1%    0.1%  t node::ShutdownWrap::OnDone(int)
+      8    0.1%    0.1%  T void node::BaseObject::InternalFieldSet<2, &(v8::Value::IsFunction() const)>(v8::Local<v8::String>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<void> const&)
+      8    0.1%    0.1%  T node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+      8    0.1%    0.1%  T __ZN2v87Context29GetNumberOfEmbedderDataFieldsEv
+      7    0.1%    0.1%  t node::StreamListener::OnStreamAfterShutdown(node::ShutdownWrap*, int)
+      7    0.1%    0.1%  t _free_small
+      7    0.1%    0.1%  T void node::StreamBase::JSMethod<&(int node::StreamBase::WriteString<(node::encoding)4>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.1%  T node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.1%    0.1%  T __ZN2v87Isolate17GetCurrentContextEv
+      7    0.1%    0.1%  T __ZN2v87Context4ExitEv
+      7    0.1%    0.1%  T __ZN2v811HandleScopeD1Ev
+      6    0.1%    0.1%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_headers_complete())>::Raw(llhttp__internal_s*)
+      6    0.1%    0.1%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.1%    0.1%  T void node::StreamBase::JSMethod<&(node::StreamBase::Shutdown(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.1%    0.1%  T node::fs::FSReqBase::~FSReqBase()
+      6    0.1%    0.1%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.1%    0.1%  T node::AsyncWrap::EmitTraceEventBefore()
+      5    0.1%    0.1%  t node::(anonymous namespace)::Parser::Execute(char const*, unsigned long)
+      5    0.1%    0.1%  t _tiny_malloc_from_free_list
+      5    0.1%    0.1%  t __ZN2v88internal12_GLOBAL__N_124ProbeInstantiationsCacheEPNS0_7IsolateENS0_6HandleINS0_13NativeContextEEEiNS1_11CachingModeE
+      5    0.1%    0.1%  T non-virtual thunk to node::LibuvStreamWrap::IsAlive()
+      5    0.1%    0.1%  T node::fs::FSReqCallback::SetReturnValue(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.1%  T node::ReportWritesToJSStreamListener::OnStreamAfterReqFinished(node::StreamReq*, int)
+      5    0.1%    0.1%  T node::AsyncWrap::EmitTraceEventDestroy()
+      5    0.1%    0.1%  T _pthread_setschedparam
+      5    0.1%    0.1%  T __ZNK2v85Value8ToStringENS_5LocalINS_7ContextEEE
+      5    0.1%    0.1%  T __ZNK2v85Value7IsInt32Ev
+      5    0.1%    0.1%  T __ZNK2v85Value17IsArrayBufferViewEv
+      5    0.1%    0.1%  T __ZN2v87Context5EnterEv
+      4    0.1%    0.1%  t node::SimpleShutdownWrap<node::AsyncWrap>::GetAsyncWrap()
+      4    0.1%    0.1%  t node::BaseObject::~BaseObject()
+      4    0.1%    0.1%  t node::AsyncHooks::pop_async_id(double)
+      4    0.1%    0.1%  t node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+      4    0.1%    0.1%  t __ZN2v8L15InternalFieldOKENS_8internal6HandleINS0_10JSReceiverEEEiPKc
+      4    0.1%    0.1%  t __ZN2v88internal19SequentialStringKeyIhE7IsMatchENS0_6StringE
+      4    0.1%    0.1%  t __ZN2v88internal12_GLOBAL__N_117InstantiateObjectEPNS0_7IsolateENS0_6HandleINS0_18ObjectTemplateInfoEEENS4_INS0_10JSReceiverEEEb
+      4    0.1%    0.1%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb0EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+      4    0.1%    0.1%  T node::TCPWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  T node::StreamBase::GetBytesRead(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  T node::AsyncWrap::IsDoneInitializing() const
+      4    0.1%    0.1%  T __pthread_clear_qos_tsd
+      4    0.1%    0.1%  T __platform_strncmp
+      4    0.1%    0.1%  T __ZN2v87Integer3NewEPNS_7IsolateEi
+      4    0.1%    0.1%  T __ZN2v85Array3NewEPNS_7IsolateEPNS_5LocalINS_5ValueEEEm
+      3    0.1%    0.1%  t non-virtual thunk to node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+      3    0.1%    0.1%  t node::fs::FSReqCallback::~FSReqCallback()
+      3    0.1%    0.1%  t node::SimpleShutdownWrap<node::ReqWrap<uv_shutdown_s> >::SimpleShutdownWrap(node::StreamBase*, v8::Local<v8::Object>)
+      3    0.1%    0.1%  t node::Environment::AddCleanupHook(void (*)(void*), void*)
+      3    0.1%    0.1%  t node::(anonymous namespace)::Parser::CreateHeaders()
+      3    0.1%    0.1%  t _tiny_try_realloc_in_place
+      3    0.1%    0.1%  t _nanov2_allocate
+      3    0.1%    0.1%  t __cxxabiv1::__function_type_info::~__function_type_info()
+      3    0.1%    0.1%  t (anonymous namespace)::fallback_free(void*)
+      3    0.1%    0.1%  T void node::StreamBase::JSMethod<&(node::StreamBase::ReadStartJS(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  T non-virtual thunk to node::LibuvStreamWrap::GetAsyncWrap()
+      3    0.1%    0.1%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  T node::StreamBase::GetObject()
+      3    0.1%    0.1%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      3    0.1%    0.1%  T node::LibuvStreamWrap::OnUvAlloc(unsigned long, uv_buf_t*)
+      3    0.1%    0.1%  T node::LibuvStreamWrap::DoTryWrite(uv_buf_t**, unsigned long*)
+      3    0.1%    0.1%  T node::HandleWrap::OnClose(uv_handle_s*)
+      3    0.1%    0.1%  T node::Environment::RunWeakRefCleanup()
+      3    0.1%    0.1%  T node::Buffer::HasInstance(v8::Local<v8::Value>)
+      3    0.1%    0.1%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      3    0.1%    0.1%  T node::AsyncWrap::EmitDestroy(node::Environment*, double)
+      3    0.1%    0.1%  T node::AsyncWrap::AsyncReset(v8::Local<v8::Object>, double, bool)
+      3    0.1%    0.1%  T int node::StreamBase::WriteString<(node::encoding)4>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  T _semaphore_create
+      3    0.1%    0.1%  T __ZNK2v86String9WriteUtf8EPNS_7IsolateEPciPii
+      3    0.1%    0.1%  T __ZNK2v86String6LengthEv
+      3    0.1%    0.1%  T __ZNK2v85Value8IsObjectEv
+      3    0.1%    0.1%  T __ZN2v88internal25FunctionCallbackArgumentsC1EPNS0_7IsolateENS0_6ObjectENS0_10HeapObjectES4_S5_Pmi
+      3    0.1%    0.1%  T __ZN2v820EscapableHandleScope6EscapeEPm
+      2    0.0%    0.0%  t std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >& std::__1::__input_arithmetic<long long, wchar_t, std::__1::char_traits<wchar_t> >(std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >&, long long&)
+      2    0.0%    0.0%  t non-virtual thunk to node::(anonymous namespace)::Parser::OnStreamAlloc(unsigned long)
+      2    0.0%    0.0%  t node::StreamBase::Write(uv_buf_t*, unsigned long, uv_stream_s*, v8::Local<v8::Object>)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Unconsume(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_url(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      2    0.0%    0.0%  t _small_malloc_from_free_list
+      2    0.0%    0.0%  t _nanov2_malloc
+      2    0.0%    0.0%  t __pthread_mutex_firstfit_lock_slow
+      2    0.0%    0.0%  t __platform_memmove$VARIANT$Haswell
+      2    0.0%    0.0%  t __cxxabiv1::__array_type_info::~__array_type_info()
+      2    0.0%    0.0%  t __ZN2v88internal6String7FlattenEPNS0_7IsolateENS0_6HandleIS1_EENS0_14AllocationTypeE
+      2    0.0%    0.0%  t __ZN2v88internal22HandleScopeImplementer12EnterContextENS0_7ContextE
+      2    0.0%    0.0%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb1EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+      2    0.0%    0.0%  T non-virtual thunk to node::LibuvStreamWrap::IsIPCPipe()
+      2    0.0%    0.0%  T node::fs::FSReqAfterScope::FSReqAfterScope(node::fs::FSReqBase*, uv_fs_s*)
+      2    0.0%    0.0%  T node::StringBytes::StorageSize(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      2    0.0%    0.0%  T node::ReportWritesToJSStreamListener::OnStreamAfterShutdown(node::ShutdownWrap*, int)
+      2    0.0%    0.0%  T node::ParseEncoding(char const*, node::encoding)
+      2    0.0%    0.0%  T node::LibuvStreamWrap::AfterUvShutdown(uv_shutdown_s*, int)
+      2    0.0%    0.0%  T node::HandleWrap::HandleWrap(node::Environment*, v8::Local<v8::Object>, uv_handle_s*, node::AsyncWrap::ProviderType)
+      2    0.0%    0.0%  T node::HandleWrap::Close(v8::Local<v8::Value>)
+      2    0.0%    0.0%  T node::AsyncWrap::~AsyncWrap()
+      2    0.0%    0.0%  T node::AsyncWrap::EmitAsyncInit(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::String>, double, double)
+      2    0.0%    0.0%  T int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T _malloc_zone_malloc
+      2    0.0%    0.0%  T _mach_port_extract_member
+      2    0.0%    0.0%  T __ZNK2v88Function29NewInstanceWithSideEffectTypeENS_5LocalINS_7ContextEEEiPNS1_INS_5ValueEEENS_14SideEffectTypeE
+      2    0.0%    0.0%  T __ZNK2v86String12WriteOneByteEPNS_7IsolateEPhiii
+      2    0.0%    0.0%  T __ZN2v88internal25PropertyCallbackArgumentsC1EPNS0_7IsolateENS0_6ObjectES4_NS0_8JSObjectENS_5MaybeINS0_11ShouldThrowEEE
+      2    0.0%    0.0%  T __ZN2v88internal10ApiNatives19InstantiateFunctionENS0_6HandleINS0_20FunctionTemplateInfoEEENS0_11MaybeHandleINS0_4NameEEE
+      2    0.0%    0.0%  T __ZN2v87Isolate9InContextEv
+      2    0.0%    0.0%  T __ZN2v87Isolate10GetCurrentEv
+      2    0.0%    0.0%  T __ZN2v86String14NewFromOneByteEPNS_7IsolateEPKhNS_13NewStringTypeEi
+      2    0.0%    0.0%  T __ZN2v86Object32SetAlignedPointerInInternalFieldEiPv
+      1    0.0%    0.0%  t std::__1::messages_byname<char>::~messages_byname()
+      1    0.0%    0.0%  t std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > std::__1::num_get<wchar_t, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > >::__do_get_unsigned<unsigned long long>(std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::ios_base&, unsigned int&, unsigned long long&) const
+      1    0.0%    0.0%  t std::__1::__hash_table<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >::erase(std::__1::__hash_const_iterator<std::__1::__hash_node<int, void*>*>)
+      1    0.0%    0.0%  t node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::credentials::SafeGetenv(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::TraceEventScope::TraceEventScope(char const*, char const*, void*)
+      1    0.0%    0.0%  t node::StreamBase::Shutdown(v8::Local<v8::Object>)
+      1    0.0%    0.0%  t node::SimpleShutdownWrap<node::ReqWrap<uv_shutdown_s> >::~SimpleShutdownWrap()
+      1    0.0%    0.0%  t node::NodeArrayBufferAllocator::Free(void*, unsigned long)
+      1    0.0%    0.0%  t node::MaybeStackBuffer<uv_buf_t, 16ul>::AllocateSufficientStorage(unsigned long)
+      1    0.0%    0.0%  t node::MaybeStackBuffer<char, 1024ul>::SetLengthAndZeroTerminate(unsigned long)
+      1    0.0%    0.0%  t node::MaybeStackBuffer<char, 1024ul>::AllocateSufficientStorage(unsigned long)
+      1    0.0%    0.0%  t node::Environment::StartProfilerIdleNotifier()::$_4::__invoke(uv_prepare_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_value(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_complete())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_begin())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::MaybePause()
+      1    0.0%    0.0%  t _moreglue
+      1    0.0%    0.0%  t __pthread_wqthread_setup
+      1    0.0%    0.0%  t ___vfwscanf
+      1    0.0%    0.0%  t ___vfprintf
+      1    0.0%    0.0%  t __ZNSt3__16__treeIjNS_4lessIjEEN2v88internal13ZoneAllocatorIjEEE7destroyEPNS_11__tree_nodeIjPvEE
+      1    0.0%    0.0%  t __ZN2v88internal14LookupIterator17PropertyOrElementEPNS0_7IsolateENS0_6HandleINS0_6ObjectEEENS4_INS0_4NameEEENS4_INS0_10JSReceiverEEENS1_13ConfigurationE
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_119InstantiateFunctionEPNS0_7IsolateENS0_6HandleINS0_13NativeContextEEENS4_INS0_20FunctionTemplateInfoEEENS0_11MaybeHandleINS0_4NameEEE
+      1    0.0%    0.0%  T std::__1::locale::classic()
+      1    0.0%    0.0%  T std::__1::__rs_get()
+      1    0.0%    0.0%  T node::tracing::TraceEventHelper::GetTracingController()
+      1    0.0%    0.0%  T node::inspector::Agent::IsActive()
+      1    0.0%    0.0%  T node::fs::FSReqAfterScope::~FSReqAfterScope()
+      1    0.0%    0.0%  T node::fs::AfterInteger(uv_fs_s*)
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding, int*)
+      1    0.0%    0.0%  T node::StreamBase::GetBytesWritten(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::RealEnvStore::Get(v8::Isolate*, v8::Local<v8::String>) const
+      1    0.0%    0.0%  T node::NodePlatform::IdleTasksEnabled(v8::Isolate*)
+      1    0.0%    0.0%  T node::MakeLibuvRequestCallback<uv_shutdown_s, void (*)(uv_shutdown_s*, int)>::Wrapper(uv_shutdown_s*, int)
+      1    0.0%    0.0%  T node::MakeLibuvRequestCallback<uv_fs_s, void (*)(uv_fs_s*)>::Wrapper(uv_fs_s*)
+      1    0.0%    0.0%  T node::LibuvStreamWrap::OnUvRead(long, uv_buf_t const*)
+      1    0.0%    0.0%  T node::LibuvStreamWrap::DoShutdown(node::ShutdownWrap*)
+      1    0.0%    0.0%  T node::InternalCallbackScope::~InternalCallbackScope()
+      1    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::AsyncWrap*, int)
+      1    0.0%    0.0%  T node::Environment::RunAndClearNativeImmediates(bool)
+      1    0.0%    0.0%  T node::Environment::GetNow()
+      1    0.0%    0.0%  T node::Emit(node::Environment*, double, node::AsyncHooks::Fields, v8::Local<v8::Function>)
+      1    0.0%    0.0%  T node::ConnectionWrap<node::TCPWrap, uv_tcp_s>::OnConnection(uv_stream_s*, int)
+      1    0.0%    0.0%  T node::BufferValue::BufferValue(v8::Isolate*, v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitDestroy()
+      1    0.0%    0.0%  T node::AsyncWrap::EmitAfter(node::Environment*, double)
+      1    0.0%    0.0%  T _mprotect
+      1    0.0%    0.0%  T _mach_voucher_extract_attr_recipe
+      1    0.0%    0.0%  T _link_addr
+      1    0.0%    0.0%  T _inet_net_pton
+      1    0.0%    0.0%  T _free
+      1    0.0%    0.0%  T _fgetws
+      1    0.0%    0.0%  T __pthread_wqthread
+      1    0.0%    0.0%  T __kernelrpc_mach_vm_deallocate_trap
+      1    0.0%    0.0%  T __kernelrpc_mach_port_set_attributes
+      1    0.0%    0.0%  T ___sflags
+      1    0.0%    0.0%  T __ZNK2v85Value6IsTrueEv
+      1    0.0%    0.0%  T __ZNK2v85Int325ValueEv
+      1    0.0%    0.0%  T __ZN2v88internal16CompareOperation22IsLiteralCompareTypeofEPPNS0_10ExpressionEPPNS0_7LiteralE
+      1    0.0%    0.0%  T __ZN2v88internal10ApiNatives17InstantiateObjectEPNS0_7IsolateENS0_6HandleINS0_18ObjectTemplateInfoEEENS4_INS0_10JSReceiverEEE
+      1    0.0%    0.0%  T __ZN2v87Isolate16ClearKeptObjectsEv
+      1    0.0%    0.0%  T __ZN2v87Integer15NewFromUnsignedEPNS_7IsolateEj
+      1    0.0%    0.0%  T __ZN2v86Object18InternalFieldCountEv
+      1    0.0%    0.0%  T __ZN2v82V818GlobalizeReferenceEPNS_8internal7IsolateEPm
+      1    0.0%    0.0%  T __ZN2v820EscapableHandleScopeC2EPNS_7IsolateE
+      1    0.0%    0.0%  T __ZN2v816FunctionTemplate11GetFunctionENS_5LocalINS_7ContextEEE
+      1    0.0%    0.0%  T __ZN2v815MicrotasksScope17PerformCheckpointEPNS_7IsolateE
+
+ [Summary]:
+   ticks  total  nonlib   name
+    716   12.5%   12.7%  JavaScript
+   4903   85.6%   86.9%  C++
+     89    1.6%    1.6%  GC
+     86    1.5%          Shared libraries
+     24    0.4%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   1747   52.7%   30.5%  T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+    377   11.4%    6.6%  T ___bsdthread_create
+    307    9.3%    5.4%  T _read$NOCANCEL
+    267    8.0%    4.7%  T _fcntl
+    169    5.1%    2.9%  T _semaphore_wait
+    164    4.9%    2.9%  T _task_restartable_ranges_synchronize
+     24    0.7%    0.4%  T __ZN2v86Object3SetENS_5LocalINS_7ContextEEENS1_INS_5ValueEEES5_
+     11    0.3%    0.2%  T ___ulock_wait
+      9    0.3%    0.2%  T _pthread_qos_max_parallelism
+      9    0.3%    0.2%  T __ZN2v811ArrayBuffer11GetContentsEv
+      8    0.2%    0.1%  t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.2%    0.1%  t node::(anonymous namespace)::GetLibuvNow(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.2%    0.1%  T node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.2%    0.1%  t _rack_region_insert
+      5    0.2%    0.1%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.2%    0.1%  t _small_malloc_should_clear
+      5    0.2%    0.1%  T non-virtual thunk to node::LibuvStreamWrap::IsAlive()
+      5    0.2%    0.1%  T node::fs::FSReqCallback::SetReturnValue(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.2%    0.1%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.2%    0.1%  T _pthread_setschedparam
+      5    0.2%    0.1%  T _kdebug_typefilter
+      5    0.2%    0.1%  T __ZNK2v85Value8ToStringENS_5LocalINS_7ContextEEE
+      5    0.2%    0.1%  T __ZNK2v85Value7IsInt32Ev
+      5    0.2%    0.1%  T __ZNK2v85Value17IsArrayBufferViewEv
+      5    0.2%    0.1%  T __ZN2v811HandleScopeC1EPNS_7IsolateE
+      4    0.1%    0.1%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  t _tiny_malloc_from_free_list
+      4    0.1%    0.1%  t _szone_realloc
+      4    0.1%    0.1%  t _free_tiny
+      4    0.1%    0.1%  T node::StreamBase::GetBytesRead(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.1%  T node::AsyncWrap::IsDoneInitializing() const
+      4    0.1%    0.1%  T __pthread_clear_qos_tsd
+      4    0.1%    0.1%  T __platform_strncmp
+      4    0.1%    0.1%  T __ZNK2v85Value10IsFunctionEv
+      3    0.1%    0.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  t node::SimpleShutdownWrap<node::ReqWrap<uv_shutdown_s> >::SimpleShutdownWrap(node::StreamBase*, v8::Local<v8::Object>)
+      3    0.1%    0.1%  t __ZN2v88internal19SequentialStringKeyIhE7IsMatchENS0_6StringE
+      3    0.1%    0.1%  T void node::StreamBase::JSMethod<&(node::StreamBase::Shutdown(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  T non-virtual thunk to node::LibuvStreamWrap::GetAsyncWrap()
+      3    0.1%    0.1%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      3    0.1%    0.1%  T node::LibuvStreamWrap::DoTryWrite(uv_buf_t**, unsigned long*)
+      3    0.1%    0.1%  T node::Buffer::HasInstance(v8::Local<v8::Value>)
+      3    0.1%    0.1%  T node::AsyncWrap::AsyncReset(v8::Local<v8::Object>, double, bool)
+      3    0.1%    0.1%  T int node::StreamBase::WriteString<(node::encoding)4>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.1%    0.1%  T __ZNK2v86String9WriteUtf8EPNS_7IsolateEPciPii
+      3    0.1%    0.1%  T __ZNK2v86String6LengthEv
+      3    0.1%    0.1%  T __ZNK2v85Value8IsObjectEv
+      3    0.1%    0.1%  T __ZN2v87Isolate17GetCurrentContextEv
+      3    0.1%    0.1%  T __ZN2v86Object3GetENS_5LocalINS_7ContextEEEj
+      2    0.1%    0.0%  t node::StreamBase::Write(uv_buf_t*, unsigned long, uv_stream_s*, v8::Local<v8::Object>)
+      2    0.1%    0.0%  t node::Environment::AddCleanupHook(void (*)(void*), void*)
+      2    0.1%    0.0%  t node::(anonymous namespace)::Parser::Unconsume(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.0%  t _tiny_malloc_should_clear
+      2    0.1%    0.0%  t _tiny_free_no_lock
+      2    0.1%    0.0%  t __pthread_mutex_firstfit_lock_slow
+      2    0.1%    0.0%  t __ZN2v88internal6String7FlattenEPNS0_7IsolateENS0_6HandleIS1_EENS0_14AllocationTypeE
+      2    0.1%    0.0%  t (anonymous namespace)::fallback_free(void*)
+      2    0.1%    0.0%  T void node::StreamBase::JSMethod<&(node::StreamBase::ReadStartJS(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.0%  T void node::StreamBase::JSMethod<&(int node::StreamBase::WriteString<(node::encoding)4>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.0%  T non-virtual thunk to node::LibuvStreamWrap::IsIPCPipe()
+      2    0.1%    0.0%  T node::StringBytes::StorageSize(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      2    0.1%    0.0%  T node::ParseEncoding(char const*, node::encoding)
+      2    0.1%    0.0%  T node::HandleWrap::Close(v8::Local<v8::Value>)
+      2    0.1%    0.0%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.0%  T node::AsyncWrap::EmitTraceEventDestroy()
+      2    0.1%    0.0%  T node::AsyncWrap::EmitAsyncInit(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::String>, double, double)
+      2    0.1%    0.0%  T int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.1%    0.0%  T __ZNK2v86String12WriteOneByteEPNS_7IsolateEPhiii
+      2    0.1%    0.0%  T __ZN2v88Function4CallENS_5LocalINS_7ContextEEENS1_INS_5ValueEEEiPS5_
+      2    0.1%    0.0%  T __ZN2v811HandleScopeD1Ev
+      1    0.0%    0.0%  t node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::StreamBase::Shutdown(v8::Local<v8::Object>)
+      1    0.0%    0.0%  t node::NodeArrayBufferAllocator::Free(void*, unsigned long)
+      1    0.0%    0.0%  t node::MaybeStackBuffer<uv_buf_t, 16ul>::AllocateSufficientStorage(unsigned long)
+      1    0.0%    0.0%  t node::MaybeStackBuffer<char, 1024ul>::SetLengthAndZeroTerminate(unsigned long)
+      1    0.0%    0.0%  t node::MaybeStackBuffer<char, 1024ul>::AllocateSufficientStorage(unsigned long)
+      1    0.0%    0.0%  t _small_malloc_from_free_list
+      1    0.0%    0.0%  t __pthread_wqthread_setup
+      1    0.0%    0.0%  t __cxxabiv1::__function_type_info::~__function_type_info()
+      1    0.0%    0.0%  T void node::StreamBase::JSMethod<&(node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::tracing::TraceEventHelper::GetTracingController()
+      1    0.0%    0.0%  T node::inspector::Agent::IsActive()
+      1    0.0%    0.0%  T node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding, int*)
+      1    0.0%    0.0%  T node::StreamBase::GetBytesWritten(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::LibuvStreamWrap::DoShutdown(node::ShutdownWrap*)
+      1    0.0%    0.0%  T node::Environment::GetNow()
+      1    0.0%    0.0%  T node::BufferValue::BufferValue(v8::Isolate*, v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitDestroy()
+      1    0.0%    0.0%  T _mprotect
+      1    0.0%    0.0%  T __pthread_wqthread
+      1    0.0%    0.0%  T __ZNK2v85Value6IsTrueEv
+      1    0.0%    0.0%  T __ZNK2v85Int325ValueEv
+      1    0.0%    0.0%  T __ZN2v87Integer15NewFromUnsignedEPNS_7IsolateEj
+      1    0.0%    0.0%  T __ZN2v86Object18InternalFieldCountEv
+      1    0.0%    0.0%  T __ZN2v82V818GlobalizeReferenceEPNS_8internal7IsolateEPm
+      1    0.0%    0.0%  T __ZN2v815MicrotasksScope17PerformCheckpointEPNS_7IsolateE
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1824   31.8%  T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+    277   15.2%    T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+     41   14.8%      LazyCompile: *getColorDepth internal/tty.js:102:23
+     41  100.0%        LazyCompile: *log internal/console/constructor.js:293:6
+     41  100.0%          T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+     41  100.0%            LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     30   10.8%      LazyCompile: *_addListener events.js:338:22
+     26   86.7%        LazyCompile: *Readable.pipe _stream_readable.js:619:35
+     24   92.3%          LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     24  100.0%            LazyCompile: *parserOnIncoming _http_server.js:717:26
+      2    7.7%          LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      2  100.0%            LazyCompile: *emit events.js:260:44
+      4   13.3%        LazyCompile: *connectionListenerInternal _http_server.js:401:36
+      4  100.0%          LazyCompile: *connectionListener _http_server.js:395:28
+      4  100.0%            LazyCompile: *onconnection net.js:1529:22
+     23    8.3%      LazyCompile: *writeGeneric internal/stream_base_commons.js:141:22
+     14   60.9%        LazyCompile: *clearBuffer _stream_writable.js:497:21
+     14  100.0%          LazyCompile: *onend _stream_readable.js:658:17
+     14  100.0%            LazyCompile: *onceWrapper events.js:411:21
+      9   39.1%        LazyCompile: *writeOrBuffer _stream_writable.js:355:23
+      9  100.0%          LazyCompile: *log internal/console/constructor.js:293:6
+      8   88.9%            T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+      1   11.1%            t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    4.3%      LazyCompile: *ReadStream._read internal/fs/streams.js:144:38
+      8   66.7%        LazyCompile: *Readable.read _stream_readable.js:368:35
+      8  100.0%          LazyCompile: *maybeReadMore_ _stream_readable.js:574:24
+      8  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      3   25.0%        LazyCompile: *<anonymous> internal/fs/streams.js:146:38
+      3  100.0%          LazyCompile: *onceWrapper events.js:411:21
+      3  100.0%            LazyCompile: *<anonymous> internal/fs/streams.js:127:45
+      1    8.3%        LazyCompile: ~<anonymous> internal/fs/streams.js:146:38
+      1  100.0%          LazyCompile: *onceWrapper events.js:411:21
+      1  100.0%            LazyCompile: *emit events.js:260:44
+     11    4.0%      LazyCompile: *callFinal _stream_writable.js:608:19
+     11  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     11    4.0%      LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     11  100.0%        LazyCompile: *parserOnIncoming _http_server.js:717:26
+     11  100.0%          LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+     10    3.6%      LazyCompile: *open fs.js:423:14
+      9   90.0%        LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      9  100.0%          LazyCompile: *parserOnIncoming _http_server.js:717:26
+      9  100.0%            LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      1   10.0%        LazyCompile: *ReadStream internal/fs/streams.js:64:20
+      1  100.0%          LazyCompile: ~createReadStream fs.js:1810:26
+      1  100.0%            LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      7    2.5%      LazyCompile: *<anonymous> internal/console/constructor.js:203:10
+      7  100.0%        LazyCompile: *afterWriteTick _stream_writable.js:475:24
+      7  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      6    2.2%      T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+      2   33.3%        LazyCompile: ~onParserExecuteCommon _http_server.js:610:31
+      2  100.0%          LazyCompile: ~onParserExecute _http_server.js:567:25
+      1   16.7%        T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+      1  100.0%          LazyCompile: ~SafeSet internal/per_context/primordials.js:102:3
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/loaders.js:1:1
+      1   16.7%        LazyCompile: ~ServerResponse _http_server.js:154:24
+      1  100.0%          LazyCompile: ~parserOnIncoming _http_server.js:717:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete _http_common.js:74:33
+      1   16.7%        LazyCompile: *open fs.js:423:14
+      1  100.0%          LazyCompile: *ReadStream internal/fs/streams.js:64:20
+      1  100.0%            LazyCompile: ~createReadStream fs.js:1810:26
+      1   16.7%        LazyCompile: *allocNewPool internal/fs/streams.js:39:22
+      1  100.0%          LazyCompile: *ReadStream._read internal/fs/streams.js:144:38
+      1  100.0%            LazyCompile: ~<anonymous> internal/fs/streams.js:146:38
+      6    2.2%      LazyCompile: *closeFsStream internal/fs/streams.js:235:23
+      5   83.3%        LazyCompile: *<anonymous> internal/fs/streams.js:117:26
+      5  100.0%          LazyCompile: *endReadableNT _stream_readable.js:1180:23
+      5  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      1   16.7%        LazyCompile: ~ReadStream._destroy internal/fs/streams.js:221:41
+      1  100.0%          LazyCompile: ~destroy internal/streams/destroy.js:5:17
+      1  100.0%            LazyCompile: ~<anonymous> internal/fs/streams.js:117:26
+      6    2.2%      LazyCompile: *Readable.on _stream_readable.js:837:33
+      5   83.3%        LazyCompile: *connectionListenerInternal _http_server.js:401:36
+      5  100.0%          LazyCompile: *connectionListener _http_server.js:395:28
+      5  100.0%            LazyCompile: *onconnection net.js:1529:22
+      1   16.7%        LazyCompile: *once events.js:429:44
+      1  100.0%          LazyCompile: ~<anonymous> internal/console/constructor.js:203:10
+      1  100.0%            LazyCompile: *afterWriteTick _stream_writable.js:475:24
+      5    1.8%      LazyCompile: *emit events.js:260:44
+      1   20.0%        LazyCompile: ~onFinish _http_outgoing.js:729:18
+      1  100.0%          LazyCompile: *afterWriteTick _stream_writable.js:475:24
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      1   20.0%        LazyCompile: ~endReadableNT _stream_readable.js:1180:23
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      1   20.0%        LazyCompile: ~addChunk _stream_readable.js:283:18
+      1  100.0%          LazyCompile: *readableAddChunk _stream_readable.js:217:26
+      1  100.0%            LazyCompile: *<anonymous> internal/fs/streams.js:177:55
+      1   20.0%        LazyCompile: ~<anonymous> net.js:670:24
+      1   20.0%        LazyCompile: ~<anonymous> internal/fs/streams.js:127:45
+      1  100.0%          LazyCompile: ~<anonymous> fs.js:155:10
+      5    1.8%      LazyCompile: *destroy internal/streams/destroy.js:5:17
+      5  100.0%        LazyCompile: *onceWrapper events.js:411:21
+      5  100.0%          LazyCompile: *emit events.js:260:44
+      5  100.0%            LazyCompile: *<anonymous> _stream_writable.js:609:17
+      4    1.4%      LazyCompile: ~parserOnIncoming _http_server.js:717:26
+      3   75.0%        LazyCompile: ~parserOnHeadersComplete _http_common.js:74:33
+      1   25.0%        LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      4    1.4%      LazyCompile: *writevGeneric internal/stream_base_commons.js:116:23
+      3   75.0%        LazyCompile: *Socket._writev net.js:790:36
+      2   66.7%          LazyCompile: *connectionCorkNT _http_outgoing.js:697:26
+      2  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      1   33.3%          LazyCompile: *OutgoingMessage.uncork _http_outgoing.js:242:44
+      1  100.0%            LazyCompile: ~connectionCorkNT _http_outgoing.js:697:26
+      1   25.0%        LazyCompile: *Socket._writeGeneric net.js:758:42
+      1  100.0%          LazyCompile: ~Socket._writev net.js:790:36
+      1  100.0%            LazyCompile: *Writable.uncork _stream_writable.js:328:37
+      4    1.4%      LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      3    1.1%      LazyCompile: ~handleWriteReq internal/stream_base_commons.js:45:24
+      3  100.0%        LazyCompile: ~writeGeneric internal/stream_base_commons.js:141:22
+      3  100.0%          LazyCompile: ~Socket._writeGeneric net.js:758:42
+      2   66.7%            LazyCompile: ~Socket._write net.js:795:35
+      1   33.3%            LazyCompile: *Writable.uncork _stream_writable.js:328:37
+      3    1.1%      LazyCompile: ~getColorDepth internal/tty.js:102:23
+      3  100.0%        LazyCompile: ~Console.<computed> internal/console/constructor.js:263:49
+      3  100.0%          LazyCompile: ~Console.<computed> internal/console/constructor.js:282:47
+      3  100.0%            LazyCompile: ~log internal/console/constructor.js:293:6
+      3    1.1%      LazyCompile: *onconnection net.js:1529:22
+     90    4.9%    LazyCompile: *destroy internal/streams/destroy.js:5:17
+     90  100.0%      LazyCompile: *onceWrapper events.js:411:21
+     90  100.0%        LazyCompile: *emit events.js:260:44
+     88   97.8%          LazyCompile: *<anonymous> _stream_writable.js:609:17
+     78   88.6%            LazyCompile: *afterShutdown net.js:424:23
+     10   11.4%            LazyCompile: ~afterShutdown net.js:424:23
+      2    2.2%          LazyCompile: *finishMaybe _stream_writable.js:633:21
+      2  100.0%            LazyCompile: ~<anonymous> _stream_writable.js:609:17
+     65    3.6%    LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+     36    2.0%    LazyCompile: *parserOnIncoming _http_server.js:717:26
+     36  100.0%      LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+     35    1.9%    LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     35  100.0%      LazyCompile: *parserOnIncoming _http_server.js:717:26
+     35  100.0%        LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+     34    1.9%    LazyCompile: *writeGeneric internal/stream_base_commons.js:141:22
+     22   64.7%      LazyCompile: *clearBuffer _stream_writable.js:497:21
+     21   95.5%        LazyCompile: *onend _stream_readable.js:658:17
+     21  100.0%          LazyCompile: *onceWrapper events.js:411:21
+     21  100.0%            LazyCompile: *endReadableNT _stream_readable.js:1180:23
+      1    4.5%        LazyCompile: *end _http_outgoing.js:734:45
+      1  100.0%          LazyCompile: ~onend _stream_readable.js:658:17
+      1  100.0%            LazyCompile: *onceWrapper events.js:411:21
+     12   35.3%      LazyCompile: *writeOrBuffer _stream_writable.js:355:23
+     12  100.0%        LazyCompile: *log internal/console/constructor.js:293:6
+     12  100.0%          T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+     12  100.0%            LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     33    1.8%    LazyCompile: *writevGeneric internal/stream_base_commons.js:116:23
+     28   84.8%      LazyCompile: *Socket._writev net.js:790:36
+     23   82.1%        LazyCompile: *connectionCorkNT _http_outgoing.js:697:26
+     23  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      5   17.9%        LazyCompile: *OutgoingMessage.uncork _http_outgoing.js:242:44
+      5  100.0%          LazyCompile: ~connectionCorkNT _http_outgoing.js:697:26
+      5  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      5   15.2%      LazyCompile: *Socket._writeGeneric net.js:758:42
+      5  100.0%        LazyCompile: ~Socket._writev net.js:790:36
+      3   60.0%          LazyCompile: *Writable.uncork _stream_writable.js:328:37
+      3  100.0%            LazyCompile: ~OutgoingMessage.uncork _http_outgoing.js:242:44
+      2   40.0%          LazyCompile: *OutgoingMessage.uncork _http_outgoing.js:242:44
+      2  100.0%            LazyCompile: ~connectionCorkNT _http_outgoing.js:697:26
+     29    1.6%    LazyCompile: *log internal/console/constructor.js:293:6
+     28   96.6%      T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+     28  100.0%        LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     28  100.0%          LazyCompile: *parserOnIncoming _http_server.js:717:26
+     28  100.0%            LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      1    3.4%      t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%        LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      1  100.0%          LazyCompile: *parserOnIncoming _http_server.js:717:26
+      1  100.0%            LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+     25    1.4%    LazyCompile: *_addListener events.js:338:22
+     15   60.0%      LazyCompile: *Readable.pipe _stream_readable.js:619:35
+     13   86.7%        LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     13  100.0%          LazyCompile: *parserOnIncoming _http_server.js:717:26
+     13  100.0%            LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      2   13.3%        LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      1   50.0%          LazyCompile: *parserOnIncoming _http_server.js:717:26
+      1  100.0%            LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      1   50.0%          LazyCompile: *emit events.js:260:44
+      1  100.0%            LazyCompile: ~parserOnIncoming _http_server.js:717:26
+      7   28.0%      LazyCompile: *parserOnIncoming _http_server.js:717:26
+      7  100.0%        LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      1    4.0%      LazyCompile: *connectionListenerInternal _http_server.js:401:36
+      1  100.0%        LazyCompile: *connectionListener _http_server.js:395:28
+      1  100.0%          LazyCompile: *onconnection net.js:1529:22
+      1    4.0%      LazyCompile: *Socket net.js:262:16
+      1  100.0%        LazyCompile: *onconnection net.js:1529:22
+      1    4.0%      LazyCompile: *ReadStream internal/fs/streams.js:64:20
+      1  100.0%        LazyCompile: ~createReadStream fs.js:1810:26
+      1  100.0%          LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      1  100.0%            LazyCompile: *emit events.js:260:44
+     25    1.4%    LazyCompile: *Readable.on _stream_readable.js:837:33
+     14   56.0%      LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     14  100.0%        LazyCompile: *parserOnIncoming _http_server.js:717:26
+     14  100.0%          LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      7   28.0%      LazyCompile: *connectionListenerInternal _http_server.js:401:36
+      7  100.0%        LazyCompile: *connectionListener _http_server.js:395:28
+      7  100.0%          LazyCompile: *onconnection net.js:1529:22
+      2    8.0%      LazyCompile: *once events.js:429:44
+      1   50.0%        LazyCompile: *Readable.pipe _stream_readable.js:619:35
+      1  100.0%          LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      1  100.0%            LazyCompile: *parserOnIncoming _http_server.js:717:26
+      1   50.0%        LazyCompile: *ReadStream._read internal/fs/streams.js:144:38
+      1  100.0%          LazyCompile: *Readable.read _stream_readable.js:368:35
+      1  100.0%            LazyCompile: *resume_ _stream_readable.js:945:17
+      1    4.0%      LazyCompile: ~connectionListenerInternal _http_server.js:401:36
+      1  100.0%        LazyCompile: *connectionListener _http_server.js:395:28
+      1  100.0%          LazyCompile: *onconnection net.js:1529:22
+      1    4.0%      LazyCompile: *resOnFinish _http_server.js:672:21
+      1  100.0%        LazyCompile: *onFinish _http_outgoing.js:729:18
+      1  100.0%          LazyCompile: *afterWriteTick _stream_writable.js:475:24
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     24    1.3%    LazyCompile: *onceWrapper events.js:411:21
+     12   50.0%      LazyCompile: *endReadableNT _stream_readable.js:1180:23
+     12  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      6   25.0%      LazyCompile: *emit events.js:260:44
+      6  100.0%        LazyCompile: *<anonymous> _stream_writable.js:609:17
+      6  100.0%          LazyCompile: *afterShutdown net.js:424:23
+      3   12.5%      LazyCompile: *onFinish _http_outgoing.js:729:18
+      3  100.0%        LazyCompile: *afterWriteTick _stream_writable.js:475:24
+      3  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      3   12.5%      LazyCompile: *<anonymous> internal/fs/streams.js:127:45
+      3  100.0%        LazyCompile: *<anonymous> fs.js:155:10
+     21    1.2%    LazyCompile: *open fs.js:423:14
+     19   90.5%      LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     19  100.0%        LazyCompile: *parserOnIncoming _http_server.js:717:26
+     19  100.0%          LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      2    9.5%      LazyCompile: *ReadStream internal/fs/streams.js:64:20
+      2  100.0%        LazyCompile: ~createReadStream fs.js:1810:26
+      2  100.0%          LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      1   50.0%            LazyCompile: *parserOnIncoming _http_server.js:717:26
+      1   50.0%            LazyCompile: *emit events.js:260:44
+     19    1.0%    LazyCompile: *Readable.pipe _stream_readable.js:619:35
+     16   84.2%      LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     16  100.0%        LazyCompile: *parserOnIncoming _http_server.js:717:26
+     16  100.0%          LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      3   15.8%      LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      2   66.7%        LazyCompile: *parserOnIncoming _http_server.js:717:26
+      2  100.0%          LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      1   33.3%        LazyCompile: *emit events.js:260:44
+      1  100.0%          LazyCompile: ~parserOnIncoming _http_server.js:717:26
+      1  100.0%            LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+
+    387    6.8%  T ___bsdthread_create
+    138   35.7%    LazyCompile: *ReadStream._read internal/fs/streams.js:144:38
+     86   62.3%      LazyCompile: *Readable.read _stream_readable.js:368:35
+     72   83.7%        LazyCompile: *maybeReadMore_ _stream_readable.js:574:24
+     72  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     14   16.3%        LazyCompile: ~maybeReadMore_ _stream_readable.js:574:24
+     14  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     37   26.8%      LazyCompile: *<anonymous> internal/fs/streams.js:146:38
+     37  100.0%        LazyCompile: *onceWrapper events.js:411:21
+     37  100.0%          LazyCompile: *<anonymous> internal/fs/streams.js:127:45
+     37  100.0%            LazyCompile: *<anonymous> fs.js:155:10
+     15   10.9%      LazyCompile: ~<anonymous> internal/fs/streams.js:146:38
+     14   93.3%        LazyCompile: *onceWrapper events.js:411:21
+     13   92.9%          LazyCompile: *emit events.js:260:44
+     13  100.0%            LazyCompile: ~<anonymous> internal/fs/streams.js:127:45
+      1    7.1%          LazyCompile: *<anonymous> internal/fs/streams.js:127:45
+      1  100.0%            LazyCompile: *<anonymous> fs.js:155:10
+      1    6.7%        LazyCompile: ~onceWrapper events.js:411:21
+      1  100.0%          LazyCompile: *emit events.js:260:44
+      1  100.0%            LazyCompile: ~<anonymous> internal/fs/streams.js:127:45
+    115   29.7%    LazyCompile: *open fs.js:423:14
+     97   84.3%      LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     97  100.0%        LazyCompile: *parserOnIncoming _http_server.js:717:26
+     97  100.0%          LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+     18   15.7%      LazyCompile: *ReadStream internal/fs/streams.js:64:20
+     18  100.0%        LazyCompile: ~createReadStream fs.js:1810:26
+     18  100.0%          LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     10   55.6%            LazyCompile: *emit events.js:260:44
+      8   44.4%            LazyCompile: *parserOnIncoming _http_server.js:717:26
+    104   26.9%    LazyCompile: *closeFsStream internal/fs/streams.js:235:23
+    100   96.2%      LazyCompile: *<anonymous> internal/fs/streams.js:117:26
+    100  100.0%        LazyCompile: *endReadableNT _stream_readable.js:1180:23
+    100  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      4    3.8%      LazyCompile: ~ReadStream._destroy internal/fs/streams.js:221:41
+      4  100.0%        LazyCompile: ~destroy internal/streams/destroy.js:5:17
+      4  100.0%          LazyCompile: ~<anonymous> internal/fs/streams.js:117:26
+      4  100.0%            LazyCompile: *emit events.js:260:44
+     20    5.2%    LazyCompile: *close fs.js:408:15
+     20  100.0%      LazyCompile: *destroy internal/streams/destroy.js:5:17
+     20  100.0%        LazyCompile: ~<anonymous> internal/fs/streams.js:117:26
+     18   90.0%          LazyCompile: *endReadableNT _stream_readable.js:1180:23
+     18  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      2   10.0%          LazyCompile: *emit events.js:260:44
+      2  100.0%            LazyCompile: ~endReadableNT _stream_readable.js:1180:23
+      7    1.8%    T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+      2   28.6%      LazyCompile: *onwrite _stream_writable.js:431:17
+      2  100.0%        LazyCompile: *writeGeneric internal/stream_base_commons.js:141:22
+      1   50.0%          LazyCompile: *writeOrBuffer _stream_writable.js:355:23
+      1  100.0%            LazyCompile: *log internal/console/constructor.js:293:6
+      1   50.0%          LazyCompile: *clearBuffer _stream_writable.js:497:21
+      1  100.0%            LazyCompile: *onend _stream_readable.js:658:17
+      1   14.3%      LazyCompile: *parserOnIncoming _http_server.js:717:26
+      1  100.0%        LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+      1   14.3%      LazyCompile: *nextTick internal/process/task_queues.js:105:18
+      1  100.0%        LazyCompile: ~onwrite _stream_writable.js:431:17
+      1  100.0%          LazyCompile: ~afterWriteDispatched internal/stream_base_commons.js:149:30
+      1  100.0%            LazyCompile: ~writeGeneric internal/stream_base_commons.js:141:22
+      1   14.3%      LazyCompile: *insertGuarded internal/timers.js:315:23
+      1  100.0%        LazyCompile: *clearBuffer _stream_writable.js:497:21
+      1  100.0%          LazyCompile: *onend _stream_readable.js:658:17
+      1  100.0%            LazyCompile: *onceWrapper events.js:411:21
+      1   14.3%      LazyCompile: *allocNewPool internal/fs/streams.js:39:22
+      1  100.0%        LazyCompile: *ReadStream._read internal/fs/streams.js:144:38
+      1  100.0%          LazyCompile: *<anonymous> internal/fs/streams.js:146:38
+      1  100.0%            LazyCompile: *onceWrapper events.js:411:21
+      1   14.3%      LazyCompile: *Socket._writev net.js:790:36
+      1  100.0%        LazyCompile: *connectionCorkNT _http_outgoing.js:697:26
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+
+    315    5.5%  T _read$NOCANCEL
+    118   37.5%    LazyCompile: *ReadStream._read internal/fs/streams.js:144:38
+     56   47.5%      LazyCompile: *<anonymous> internal/fs/streams.js:146:38
+     56  100.0%        LazyCompile: *onceWrapper events.js:411:21
+     56  100.0%          LazyCompile: *<anonymous> internal/fs/streams.js:127:45
+     56  100.0%            LazyCompile: *<anonymous> fs.js:155:10
+     47   39.8%      LazyCompile: *Readable.read _stream_readable.js:368:35
+     25   53.2%        LazyCompile: *maybeReadMore_ _stream_readable.js:574:24
+     25  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     22   46.8%        LazyCompile: ~maybeReadMore_ _stream_readable.js:574:24
+     22  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     15   12.7%      LazyCompile: ~<anonymous> internal/fs/streams.js:146:38
+     13   86.7%        LazyCompile: *onceWrapper events.js:411:21
+     13  100.0%          LazyCompile: *emit events.js:260:44
+     13  100.0%            LazyCompile: ~<anonymous> internal/fs/streams.js:127:45
+      2   13.3%        LazyCompile: ~onceWrapper events.js:411:21
+      2  100.0%          LazyCompile: *emit events.js:260:44
+      2  100.0%            LazyCompile: ~<anonymous> internal/fs/streams.js:127:45
+     94   29.8%    LazyCompile: *open fs.js:423:14
+     82   87.2%      LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     82  100.0%        LazyCompile: *parserOnIncoming _http_server.js:717:26
+     82  100.0%          LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+     12   12.8%      LazyCompile: *ReadStream internal/fs/streams.js:64:20
+     12  100.0%        LazyCompile: ~createReadStream fs.js:1810:26
+     12  100.0%          LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      6   50.0%            LazyCompile: *parserOnIncoming _http_server.js:717:26
+      6   50.0%            LazyCompile: *emit events.js:260:44
+     80   25.4%    LazyCompile: *closeFsStream internal/fs/streams.js:235:23
+     76   95.0%      LazyCompile: *<anonymous> internal/fs/streams.js:117:26
+     76  100.0%        LazyCompile: *endReadableNT _stream_readable.js:1180:23
+     76  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      4    5.0%      LazyCompile: ~ReadStream._destroy internal/fs/streams.js:221:41
+      4  100.0%        LazyCompile: ~destroy internal/streams/destroy.js:5:17
+      4  100.0%          LazyCompile: ~<anonymous> internal/fs/streams.js:117:26
+      4  100.0%            LazyCompile: *emit events.js:260:44
+     15    4.8%    LazyCompile: *close fs.js:408:15
+     15  100.0%      LazyCompile: *destroy internal/streams/destroy.js:5:17
+     15  100.0%        LazyCompile: ~<anonymous> internal/fs/streams.js:117:26
+     13   86.7%          LazyCompile: *endReadableNT _stream_readable.js:1180:23
+     13  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      2   13.3%          LazyCompile: *emit events.js:260:44
+      2  100.0%            LazyCompile: ~endReadableNT _stream_readable.js:1180:23
+
+    267    4.7%  T _fcntl
+    261   97.8%    LazyCompile: *destroy internal/streams/destroy.js:5:17
+    261  100.0%      LazyCompile: *onceWrapper events.js:411:21
+    261  100.0%        LazyCompile: *emit events.js:260:44
+    258   98.9%          LazyCompile: *<anonymous> _stream_writable.js:609:17
+    243   94.2%            LazyCompile: *afterShutdown net.js:424:23
+     15    5.8%            LazyCompile: ~afterShutdown net.js:424:23
+      3    1.1%          LazyCompile: *finishMaybe _stream_writable.js:633:21
+      3  100.0%            LazyCompile: ~<anonymous> _stream_writable.js:609:17
+      6    2.2%    LazyCompile: *Socket._destroy net.js:650:37
+      6  100.0%      LazyCompile: ~destroy internal/streams/destroy.js:5:17
+      4   66.7%        LazyCompile: ~onceWrapper events.js:411:21
+      4  100.0%          LazyCompile: *emit events.js:260:44
+      4  100.0%            LazyCompile: *finishMaybe _stream_writable.js:633:21
+      2   33.3%        LazyCompile: *onceWrapper events.js:411:21
+      2  100.0%          LazyCompile: *emit events.js:260:44
+      2  100.0%            LazyCompile: *finishMaybe _stream_writable.js:633:21
+
+    195    3.4%  T _guarded_open_np
+
+    169    2.9%  T _semaphore_wait
+    169  100.0%    LazyCompile: *writevGeneric internal/stream_base_commons.js:116:23
+    134   79.3%      LazyCompile: *Socket._writev net.js:790:36
+    106   79.1%        LazyCompile: *connectionCorkNT _http_outgoing.js:697:26
+    106  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     28   20.9%        LazyCompile: *OutgoingMessage.uncork _http_outgoing.js:242:44
+     28  100.0%          LazyCompile: ~connectionCorkNT _http_outgoing.js:697:26
+     28  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     32   18.9%      LazyCompile: *Socket._writeGeneric net.js:758:42
+     22   68.8%        LazyCompile: ~Socket._writev net.js:790:36
+     13   59.1%          LazyCompile: *Writable.uncork _stream_writable.js:328:37
+     13  100.0%            LazyCompile: ~OutgoingMessage.uncork _http_outgoing.js:242:44
+      8   36.4%          LazyCompile: *OutgoingMessage.uncork _http_outgoing.js:242:44
+      8  100.0%            LazyCompile: ~connectionCorkNT _http_outgoing.js:697:26
+      1    4.5%          LazyCompile: ~doWrite _stream_writable.js:393:17
+      1  100.0%            LazyCompile: ~clearBuffer _stream_writable.js:497:21
+     10   31.3%        LazyCompile: *clearBuffer _stream_writable.js:497:21
+     10  100.0%          LazyCompile: ~Writable.uncork _stream_writable.js:328:37
+     10  100.0%            LazyCompile: ~OutgoingMessage.uncork _http_outgoing.js:242:44
+      3    1.8%      LazyCompile: ~Socket._writeGeneric net.js:758:42
+      3  100.0%        LazyCompile: ~Socket._writev net.js:790:36
+      2   66.7%          LazyCompile: *Writable.uncork _stream_writable.js:328:37
+      2  100.0%            LazyCompile: ~OutgoingMessage.uncork _http_outgoing.js:242:44
+      1   33.3%          LazyCompile: ~doWrite _stream_writable.js:393:17
+      1  100.0%            LazyCompile: ~clearBuffer _stream_writable.js:497:21
+
+    164    2.9%  T _task_restartable_ranges_synchronize
+    155   94.5%    LazyCompile: *writeGeneric internal/stream_base_commons.js:141:22
+     77   49.7%      LazyCompile: *writeOrBuffer _stream_writable.js:355:23
+     77  100.0%        LazyCompile: *log internal/console/constructor.js:293:6
+     77  100.0%          T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+     77  100.0%            LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     74   47.7%      LazyCompile: *clearBuffer _stream_writable.js:497:21
+     64   86.5%        LazyCompile: *onend _stream_readable.js:658:17
+     64  100.0%          LazyCompile: *onceWrapper events.js:411:21
+     64  100.0%            LazyCompile: *endReadableNT _stream_readable.js:1180:23
+     10   13.5%        LazyCompile: *end _http_outgoing.js:734:45
+     10  100.0%          LazyCompile: ~onend _stream_readable.js:658:17
+     10  100.0%            LazyCompile: *onceWrapper events.js:411:21
+      2    1.3%      LazyCompile: ~Socket._writeGeneric net.js:758:42
+      2  100.0%        LazyCompile: *Writable.uncork _stream_writable.js:328:37
+      2  100.0%          LazyCompile: ~end _http_outgoing.js:734:45
+      2  100.0%            LazyCompile: ~onend _stream_readable.js:658:17
+      2    1.3%      LazyCompile: *Writable.write _stream_writable.js:291:36
+      2  100.0%        LazyCompile: ~Console.<computed> internal/console/constructor.js:222:46
+      2  100.0%          LazyCompile: ~log internal/console/constructor.js:293:6
+      2  100.0%            t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    5.5%    LazyCompile: *Socket._writeGeneric net.js:758:42
+      6   66.7%      LazyCompile: ~Socket._write net.js:795:35
+      6  100.0%        LazyCompile: ~doWrite _stream_writable.js:393:17
+      4   66.7%          LazyCompile: *Console.<computed> internal/console/constructor.js:222:46
+      4  100.0%            LazyCompile: ~log internal/console/constructor.js:293:6
+      2   33.3%          LazyCompile: ~clearBuffer _stream_writable.js:497:21
+      1   50.0%            LazyCompile: ~Writable.uncork _stream_writable.js:328:37
+      1   50.0%            LazyCompile: *end _http_outgoing.js:734:45
+      3   33.3%      LazyCompile: *OutgoingMessage.uncork _http_outgoing.js:242:44
+      3  100.0%        LazyCompile: ~connectionCorkNT _http_outgoing.js:697:26
+      3  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+
+    119    2.1%  T __kernelrpc_thread_policy_set
+
+    108    1.9%  T __kernelrpc_mach_vm_purgable_control_trap
+
+    103    1.8%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+    103  100.0%    T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+     59   57.3%      LazyCompile: *ReadStream._read internal/fs/streams.js:144:38
+     32   54.2%        LazyCompile: *Readable.read _stream_readable.js:368:35
+     28   87.5%          LazyCompile: *maybeReadMore_ _stream_readable.js:574:24
+     28  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      4   12.5%          LazyCompile: ~maybeReadMore_ _stream_readable.js:574:24
+      4  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+     23   39.0%        LazyCompile: *<anonymous> internal/fs/streams.js:146:38
+     23  100.0%          LazyCompile: *onceWrapper events.js:411:21
+     23  100.0%            LazyCompile: *<anonymous> internal/fs/streams.js:127:45
+      4    6.8%        LazyCompile: ~<anonymous> internal/fs/streams.js:146:38
+      4  100.0%          LazyCompile: *onceWrapper events.js:411:21
+      3   75.0%            LazyCompile: *emit events.js:260:44
+      1   25.0%            LazyCompile: *<anonymous> internal/fs/streams.js:127:45
+     28   27.2%      LazyCompile: *open fs.js:423:14
+     28  100.0%        LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+     28  100.0%          LazyCompile: *parserOnIncoming _http_server.js:717:26
+     28  100.0%            LazyCompile: *parserOnHeadersComplete _http_common.js:74:33
+     12   11.7%      LazyCompile: *closeFsStream internal/fs/streams.js:235:23
+     12  100.0%        LazyCompile: *<anonymous> internal/fs/streams.js:117:26
+     12  100.0%          LazyCompile: *endReadableNT _stream_readable.js:1180:23
+     12  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      2    1.9%      LazyCompile: *close fs.js:408:15
+      2  100.0%        LazyCompile: *destroy internal/streams/destroy.js:5:17
+      2  100.0%          LazyCompile: ~<anonymous> internal/fs/streams.js:117:26
+      2  100.0%            LazyCompile: *endReadableNT _stream_readable.js:1180:23
+
+     99    1.7%  T _proc_set_cpumon_params
+
+     91    1.6%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     91  100.0%    T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+     77   84.6%      LazyCompile: *getColorDepth internal/tty.js:102:23
+     76   98.7%        LazyCompile: *log internal/console/constructor.js:293:6
+     74   97.4%          T __ZN2v88internal11CallPrinter18VisitNaryOperationEPNS0_13NaryOperationE
+     74  100.0%            LazyCompile: *<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      2    2.6%          t node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%            LazyCompile: ~<anonymous> /Users/dengwenwen/study/note/node_note/node_5.js:4:19
+      1    1.3%        LazyCompile: ~Console.<computed> internal/console/constructor.js:263:49
+      1  100.0%          LazyCompile: ~Console.<computed> internal/console/constructor.js:282:47
+      1  100.0%            LazyCompile: ~log internal/console/constructor.js:293:6
+     14   15.4%      LazyCompile: ~getColorDepth internal/tty.js:102:23
+     14  100.0%        LazyCompile: ~Console.<computed> internal/console/constructor.js:263:49
+     14  100.0%          LazyCompile: ~Console.<computed> internal/console/constructor.js:282:47
+     14  100.0%            LazyCompile: ~log internal/console/constructor.js:293:6
+
